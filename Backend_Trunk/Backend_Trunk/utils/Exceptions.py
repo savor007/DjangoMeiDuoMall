@@ -28,3 +28,7 @@ def exception_handler(exc , context):
             response=Response({'message':'database or redis error'}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
 
     return response
+
+
+def QQAPIError(BaseException):
+    pass

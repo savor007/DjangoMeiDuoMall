@@ -129,21 +129,116 @@ var vm = new Vue({
         // 第二步
         // 发送短信验证码
         send_sms_code: function(){
+            if (this.sending_flag==true)
+            {
+                return
+            }
+            this.sending_flag=true;
+            axios.get(this.host+'/sms_codes/?access_token='+this.access_token, {responseType: 'json'}).then(
+                response=>{
+                    var num=60;
+                    var timer=setInterval(
+                        ()=>{
+                            if (num==1)
+                            {
+                                clearInterval(timer)
+                                this.sms_code_tip='获取短信验证码'
+                                this.sending_flag=false
+                            }
+                            else
+                                {
+                                    num-=1;
+                                    this.sms_code_tip=num+ '秒';
+                                }
+                        },1000,60)
+                }
+            ).catch(
+                error=>{
+                    alert(error.response.message);
+                    this.sending_flag=false;
+                }
+            )
 
         },
         // 第二步表单提交，验证手机号，获取修改密码的access_token
         form_2_on_submit: function(){
+            this.check_sms_code();
+            if (this.error_sms_code == false) {
+                axios.get(this.host + '/accounts/' + this.username + '/password/token/?sms_code=' + this.sms_code, {
+                        responseType: 'json'
+                    })
+                    .then(response => {
+                        this.user_id = response.data.user_id;
+                        this.access_token = response.data.access_token;
+                        this.step_class['step-3'] = true;
+                        this.step_class['step-2'] = false;
+                        this.is_show_form_2 = false;
+                        this.is_show_form_3 = true;
+                    })
+                    .catch(error => {
+                        if (error.response.status == 400) {
+                            this.error_sms_code_message = '验证码错误';
+                            this.error_sms_code = true;
+                        } else if(error.response.status == 404){
+                            this.error_sms_code_message = '手机号不存在';
+                            this.error_sms_code = true;
+                        } else {
+                            alert(error.response.data.message);
+                            console.log(error.response.data);
+                        }
+                    })
+            }
 
         },
 
         // 第三步
         check_pwd: function (){
+            var len= this.password.length;
+            if(len<8||len>20)
+            {
+                this.error_password=true;
+            }
+            else
+            {
+                this.error_password=false;
+            }
 
         },
         check_cpwd: function (){
+            if(this.password2!=this.password)
+            {
+                this.error_check_password=true;
+            }
+            else
+            {
+                this.error_check_password=false;
+            }
+
 
         },
         form_3_on_submit: function(){
+            this.check_cpwd();
+            this.check_pwd();
+            if (this.error_password==false && this.error_check_password==false){
+                axios.post(this.host+'/users/'+this.user_id+'/password/',
+                    {
+                        password:this.password,
+                        password2:this.password2,
+                        access_token:this.access_token
+                    }, {responseType:'json'}).then(
+                        response=>{
+                            this.step_class['step-3'] = false;
+                            this.step_class['step-4'] = true;
+                            this.is_show_form_4 = true;
+                            this.is_show_form_3 = false;
+                        }
+                ).catch(error=>{
+                    alert(error.response.data.message);
+                    console.log(error.response.data)
+
+                })
+
+            }
 
         }
     }

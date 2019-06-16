@@ -2,13 +2,13 @@
 from rest_framework.generics import GenericAPIView
 from .serializers import ImageCodeSerializer
 from rest_framework.response import Response
-from django_redis import get_redis_connection
 from Backend_Trunk.libs.yuntongxun import sms
 from Backend_Trunk.utils.constants import SMS_CODE_EXPIRY, MOBILE_REQUEST_EXPRIRY
 from rest_framework.status import *
 import logging
 import random
 from celery_tasks.sms.tasks import send_sms_code
+from django_redis import get_redis_connection
 
 logger=logging.getLogger('django')
 

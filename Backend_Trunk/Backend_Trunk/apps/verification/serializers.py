@@ -3,6 +3,7 @@ from rest_framework import serializers
 
 from django_redis import get_redis_connection
 from redis.exceptions import RedisError
+
 import logging
 
 logger=logging.getLogger('django')
@@ -48,3 +49,4 @@ class ImageCodeSerializer(serializers.Serializer):
 
 
         return attrs
+

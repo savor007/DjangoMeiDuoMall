@@ -6,6 +6,7 @@ from django.utils.module_loading import import_string
 import logging
 from django_redis import get_redis_connection
 from django.conf import settings
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 # Create your views here.
 
 logger=logging.getLogger('django')

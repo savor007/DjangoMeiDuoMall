@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['api.meiduo.site','www.meiduo.site', '127.0.0.1']
 
-# REMOTE_DATABASE_IPADRRESS = "10.144.152.67"
+#REMOTE_DATABASE_IPADRRESS = "10.144.153.112"
 REMOTE_DATABASE_IPADRRESS = "192.168.0.120"
 # Application definition
 
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'user.apps.UserConfig',
     'verification.apps.VerificationConfig',
+    'oauth.apps.OauthConfig'
 
 ]
 
@@ -213,7 +214,7 @@ REST_FRAMEWORK={
 }
 
 JWT_AUTH={
-    'JWT_EXPIRATION_DELTA':datetime.timedelta(days=1),
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'user.utils.jwt_response_payload_handler'
 }
 
@@ -234,3 +235,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 CORS_ALLOW_CREDENTIALS =True
+
+QQ_APP_ID='101474184'
+QQ_APP_KEY = 'c6ce949e04e12ecc909ae6a8b09b637c'
+QQ_REDIRECT_URL = 'http://www.meiduo.site:8080/oauth_callback.html'
