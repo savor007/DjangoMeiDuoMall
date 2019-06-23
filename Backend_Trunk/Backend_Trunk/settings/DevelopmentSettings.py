@@ -33,8 +33,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['api.meiduo.site','www.meiduo.site', '127.0.0.1']
 
-#REMOTE_DATABASE_IPADRRESS = "10.144.153.112"
-REMOTE_DATABASE_IPADRRESS = "192.168.0.120"
+#REMOTE_DATABASE_IPADRRESS = "10.144.157.48"
+REMOTE_DATABASE_IPADRRESS = "192.168.210.128"
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,9 +46,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'ckeditor',
+    'ckeditor_uploader',
+    'django_crontab',
     'user.apps.UserConfig',
     'verification.apps.VerificationConfig',
-    'oauth.apps.OauthConfig'
+    'oauth.apps.OauthConfig',
+    'area.apps.AreaConfig',
+    'goods.apps.GoodsConfig',
+    'advertisements.apps.AdvertisementsConfig'
 
 ]
 
@@ -116,6 +122,13 @@ CACHES={
     "verify_codes": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://"+REMOTE_DATABASE_IPADRRESS+"/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "browser_histroy": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://"+REMOTE_DATABASE_IPADRRESS+"/4",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -188,14 +201,14 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/meiduo.log"),  # 日志文件的位置
+            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/meiduo.log"),
             'maxBytes': 300 * 1024 * 1024,
             'backupCount': 10,
             'formatter': 'verbose'
         },
     },
     'loggers': {
-        'django': {  # 定义了一个名为django的日志器
+        'django': {
             'handlers': ['console', 'file'],
             'propagate': True,
         },
@@ -206,11 +219,12 @@ LOGGING = {
 REST_FRAMEWORK={
     # EXCEPTION
     'EXCEPTION_HANDLER':'Backend_Trunk.utils.Exceptions.exception_handler',
-    'DEFAULT_AUTHENTICATION_CLASS':(
+    'DEFAULT_AUTHENTICATION_CLASSES':(
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    'DEFAULT_PAGINATION_CLASS':'Backend_Trunk.utils.models.StandardResultSetPagination'
 }
 
 JWT_AUTH={
@@ -239,3 +253,54 @@ CORS_ALLOW_CREDENTIALS =True
 QQ_APP_ID='101474184'
 QQ_APP_KEY = 'c6ce949e04e12ecc909ae6a8b09b637c'
 QQ_REDIRECT_URL = 'http://www.meiduo.site:8080/oauth_callback.html'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+
+EMAIL_HOST_USER = 'sunwei_cv@163.com'
+
+EMAIL_HOST_PASSWORD = 'dg200131018'
+
+EMAIL_FROM = 'python<sunwei_cv@163.com>'
+
+REST_FRAMEWORK_EXTENSIONS={
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT':60*60*12,
+    'DEFAULT_USE_CACHE':'default',
+}
+
+CKEDITOR_CONFIGS={
+    'default':{
+        'toolbar':'full',
+        'height':300,
+        # 'width':300,
+    },
+}
+
+CKEDITOR_UPLOAD_PATH=''     #用来设置图片保存路径，使用了FastDF，所以该项设置为空字符
+DEFAULT_FILE_STORAGE='Backend_Trunk.utils.FastDFS.FileStorage.FastDFSStorage'
+DFS_BASE_URL= 'http://'+REMOTE_DATABASE_IPADRRESS+':8888/'
+DFS_CLIENT_CONF=os.path.join(BASE_DIR, 'utils/FastDFS/client.conf')
+
+GENERATED_STATIC_HTML_FILES_DIR= os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'FrondENDMaterials')
+
+TEMPLATES=[
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+
+    },
+]
+CRONJOBS=[('*/5 * * * *', 'advertisements.crons.generate_static_index_html', '>>/Users/sunwei/Documents/Django Practice/DjangoMeiDuoMall/Backend_Trunk/logs/crontab.log')]
+CRONTAB_COMMAND_PREFIX='LANG_ALL=zh_cn.UTF-8'
+
+

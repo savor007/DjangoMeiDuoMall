@@ -2,29 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3760f668-974e-4327-bbe7-fc8d3741f0ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/23d7c4a6-c027-46d5-995d-df95300104fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/23d7c4a6-c027-46d5-995d-df95300104fb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a90df397-1950-479d-bbd6-b0388a237a28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a90df397-1950-479d-bbd6-b0388a237a28.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/migrations/0002_auto_20190616_1215.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/drf_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/drf_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/Exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/Exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend_Trunk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/js/find_password.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/js/find_password.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/js/oauth_callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/js/oauth_callback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrondENDMaterials/js/user_center_site.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/js/user_center_site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/oauth_callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/oauth_callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/user_center_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/user_center_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/user_center_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/user_center_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrondENDMaterials/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrondENDMaterials/list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +31,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DjangoMeiDuoMall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1559375956652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MeiduoMall_Trunk" />
     <SUITE FILE_PATH="coverage/DjangoMeiDuoMall$views.coverage" NAME="views Coverage Results" MODIFIED="1559960084524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user" />
-    <SUITE FILE_PATH="coverage/DjangoMeiDuoMall$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1560670018751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend_Trunk" />
+    <SUITE FILE_PATH="coverage/DjangoMeiDuoMall$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1561271905321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend_Trunk" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -51,16 +47,20 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="meiduo_mall@192.168.0.120" type="feb32156:DbDataSourceImpl" />
+        <item name="meiduo_mall@10.144.157.48" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="meiduo_mall@192.168.0.120" type="feb32156:DbDataSourceImpl" />
+        <item name="meiduo_mall@192.168.210.128" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meiduo_mall@192.168.210.128" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="meiduo_mall@192.168.0.120" type="feb32156:DbDataSourceImpl" />
+        <item name="meiduo_mall@192.168.210.128" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="meiduo_mall: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
@@ -70,79 +70,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/views.py">
+        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="287">
+              <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="157" column="17" lean-forward="true" selection-start-line="157" selection-start-column="17" selection-end-line="157" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-770" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/user_center_info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/exceptions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="201" column="25" lean-forward="true" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="237">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -151,11 +119,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/views.py">
+        <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="166">
+              <caret line="194" column="36" selection-start-line="194" selection-start-column="36" selection-end-line="194" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_order.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-98" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrondENDMaterials/success_verify_email.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-401" />
           </provider>
         </entry>
       </file>
@@ -176,55 +166,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MeiduoMall_Trunk/settings/ProductionSetting.py" />
-        <option value="$PROJECT_DIR$/MeiduoMall_Trunk/utils/Constants.py" />
-        <option value="$PROJECT_DIR$/MeiduoMall_Trunk/apps/__init__.py" />
-        <option value="$PROJECT_DIR$/MeiduoMall_Trunk/settings/DevelopmentSetting.py" />
-        <option value="$PROJECT_DIR$/MeiduoMall_Trunk/manage.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/ProductionSettings.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/manage.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/migrations/serializers.py" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/js/host.js" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/CeleryTask/setting.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/CeleryTask/main.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/libs/yuntongxun/sms.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/CeleryTask/sms/task.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/setting.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/sms/task.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/tests.py" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/register.html" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/js/register.js" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/utils.py" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/find_password.html" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/oauth_callback.html" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/serializers.py" />
-        <option value="$PROJECT_DIR$/FrondENDMaterials/js/find_password.js" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/__init__.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/models.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/__init__.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/__init__.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/urls.py" />
         <option value="$PROJECT_DIR$/FrondENDMaterials/login.html" />
         <option value="$PROJECT_DIR$/FrondENDMaterials/js/login.js" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/models.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/constants.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/Exceptions.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/utils.py" />
         <option value="$PROJECT_DIR$/FrondENDMaterials/js/oauth_callback.js" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/urls.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/drf_views.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/views.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/serializers.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py" />
-        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py" />
         <option value="$PROJECT_DIR$/FrondENDMaterials/js/user_center_info.js" />
         <option value="$PROJECT_DIR$/FrondENDMaterials/user_center_info.html" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/views.py" />
+        <option value="$PROJECT_DIR$/FrondENDMaterials/success_verify_email.html" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/email/tasks.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/views.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/area/serializers.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/scripts/areas.sql" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/scripts/import_data_to_db.sh" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/area/views.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/area/models.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/migrations/0002_auto_20190619_1402.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/advertisements/models.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/FastDFS/client.conf" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/models.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/advertisements/admin.py" />
+        <option value="/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/admin/sites.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/area/urls.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/urls.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/FastDFS/FileStorage.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py" />
+        <option value="$PROJECT_DIR$/FrondENDMaterials/js/user_center_site.js" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py" />
+        <option value="$PROJECT_DIR$/FrondENDMaterials/js/index.js" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/scripts/regenerate_index_html.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/utils.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/advertisements/crons.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/urls.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/serializers.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/constants.py" />
+        <option value="$PROJECT_DIR$/FrondENDMaterials/js/detail.js" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/celery_tasks/html/tasks.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/admin.py" />
         <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/urls.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/views.py" />
+        <option value="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/models.py" />
       </list>
     </option>
   </component>
@@ -234,9 +226,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="816" />
   </component>
@@ -244,11 +236,10 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,7 +271,7 @@
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
+              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
@@ -288,15 +279,7 @@
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="verification" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +293,7 @@
               <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
@@ -321,13 +304,155 @@
             <path>
               <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend_Trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
               <item name="FrondENDMaterials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
               <item name="FrondENDMaterials" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoMeiDuoMall" type="462c0819:PsiDirectoryNode" />
+              <item name="FrondENDMaterials" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="2019" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="goods" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="verification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="settings" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="celery_tasks" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="celery_tasks" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="html" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Backend_Trunk" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="logs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="FrondENDMaterials" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DjangoMeiDuoMall" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="FrondENDMaterials" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -348,13 +473,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FrondENDMaterials" />
       <recent name="$PROJECT_DIR$/FrondENDMaterials/js" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/templates" />
+      <recent name="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/FastDFS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification" />
       <recent name="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings" />
       <recent name="$PROJECT_DIR$/Backend_Trunk/Backend_Trunk" />
       <recent name="$PROJECT_DIR$/MeiduoMall_Trunk/Mediduo_Mall" />
-      <recent name="$PROJECT_DIR$/MeiduoMall_Trunk/settings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -488,12 +616,25 @@
       <workItem from="1560391697605" duration="12371000" />
       <workItem from="1560507360898" duration="9046000" />
       <workItem from="1560594893625" duration="11020000" />
-      <workItem from="1560655207621" duration="10692000" />
+      <workItem from="1560655207621" duration="11256000" />
+      <workItem from="1560677069030" duration="945000" />
+      <workItem from="1560736976012" duration="12104000" />
+      <workItem from="1560771928363" duration="424000" />
+      <workItem from="1560825606060" duration="4093000" />
+      <workItem from="1560864419273" duration="4550000" />
+      <workItem from="1560911068172" duration="6551000" />
+      <workItem from="1560950384003" duration="5261000" />
+      <workItem from="1560959962572" duration="36000" />
+      <workItem from="1560995867325" duration="6000" />
+      <workItem from="1560998026758" duration="13934000" />
+      <workItem from="1561036155796" duration="398000" />
+      <workItem from="1561185882401" duration="21247000" />
+      <workItem from="1561256638976" duration="23452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148048000" />
+    <option name="totallyTimeSpent" value="241613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,291 +646,437 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="48" width="1440" height="816" extended-state="0" />
+    <frame x="9" y="23" width="1440" height="814" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.27539343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.2546495" />
       <window_info id="Structure" order="1" sideWeight="0.5020747" side_tool="true" weight="0.24658519" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32831737" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.55662984" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32284543" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37448558" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3739612" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32777777" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2320442" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.48891968" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3269494" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32409972" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.108726755" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.22246066" />
+      <window_info id="Structure" order="1" sideWeight="0.5020747" side_tool="true" weight="0.24658519" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32777777" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37448558" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34583333" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32777777" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4486111" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32825485" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32409972" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.07868383" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" sideWeight="0.5020747" side_tool="true" weight="0.24658519" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32962447" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32465753" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32962447" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.04434907" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py</url>
-          <line>170</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/FrondENDMaterials/js/user_center_info.js</url>
-          <line>49</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>request</expression-string>
+        <expression-string>SKU.objects.filter(category_id=category_id, is_launched=True).QuerySet</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>opts.fields</expression-string>
+        <expression-string>SKU.objects.filter(category_id=category_id, is_launched=True)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>field.serialize</expression-string>
+        <expression-string>validated_data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>serializer._</expression-string>
+        <expression-string>myserializer.validated_data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.validated_data</expression-string>
+        <expression-string>formatter_serializer</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>request.data</expression-string>
+        <expression-string>Area.objects.get(120000)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data</expression-string>
+        <expression-string>self.context</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.context['view'].kwargs</expression-string>
+        <expression-string>result</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.context['view']</expression-string>
+        <expression-string>self._reverse_dict</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/apps.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/celery_tasks/setting.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/models.py">
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/index_copy.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/advertisements/crons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="528">
+          <caret line="44" column="82" selection-start-line="44" selection-start-column="82" selection-end-line="44" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/ProductionSettings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/logs/meiduo.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/8.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-766">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/conf/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/templates/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="-2785" />
+      </provider>
+    </entry>
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_sku_image">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/goods/9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12531">
+          <caret line="888" column="54" selection-start-line="888" selection-start-column="54" selection-end-line="888" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/goods/8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="1755" lean-forward="true" selection-start-line="1755" selection-end-line="1755" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/logs/cron_tasks.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_goods_category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_goods_channel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_goods_specification">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/Exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/drf_views.py">
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="54">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2014" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/logs/crontab.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/list.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/list_copy.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/celery_tasks/html/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="102" column="41" lean-forward="true" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
           <folding>
-            <element signature="e#1#51#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/validators.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="384" selection-start-line="384" selection-end-line="384" />
+        <state relative-caret-position="-293">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        <state relative-caret-position="120">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/abc.py">
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="-1081" />
+      </provider>
+    </entry>
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_sku">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="1623" selection-start-line="1623" selection-end-line="1623" />
+    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/utils/html.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/options.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/dispatch/dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="492" selection-start-line="492" selection-end-line="492" />
+        <state relative-caret-position="346">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="148">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5535">
-          <caret line="391" selection-start-line="391" selection-end-line="391" />
+        <state relative-caret-position="247">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/celery_tasks/main.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/utils/serializer_helpers.py">
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/success_verify_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
+        <state relative-caret-position="-401" />
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_collections_abc.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="742" selection-start-line="742" selection-end-line="742" />
+        <state relative-caret-position="237">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/utils/model_meta.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1135">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="59">
+          <caret line="202" column="6" selection-start-line="202" selection-start-column="6" selection-end-line="202" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py">
+    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2661">
-          <caret line="650" column="51" lean-forward="true" selection-start-line="650" selection-start-column="51" selection-end-line="650" selection-end-column="51" />
+        <state relative-caret-position="166">
+          <caret line="194" column="36" selection-start-line="194" selection-start-column="36" selection-end-line="194" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/tests.py">
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_order.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://a90df397-1950-479d-bbd6-b0388a237a28/schema/meiduo_mall/table/tb_oauth_qq">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/user_center_info.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -800,229 +1087,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/place_order.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/oauth_callback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="185" column="18" lean-forward="true" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/user_center_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="114" column="33" lean-forward="true" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="209" column="24" selection-start-line="209" selection-start-column="24" selection-end-line="209" selection-end-column="24" />
-          <folding>
-            <element signature="e#62#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="449" selection-start-line="449" selection-end-line="449" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/deprecation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="267" selection-start-line="267" selection-end-line="267" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/utils/Exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework_jwt/authentication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/verification/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/oauth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/six.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="811" column="4" selection-start-line="811" selection-start-column="4" selection-end-line="811" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="103" column="16" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/apps/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="157" column="17" lean-forward="true" selection-start-line="157" selection-start-column="17" selection-end-line="157" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/js/user_center_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="201" column="25" lean-forward="true" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backend_Trunk/Backend_Trunk/settings/DevelopmentSettings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
+        <state relative-caret-position="287">
+          <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrondENDMaterials/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770" />
       </provider>
     </entry>
   </component>

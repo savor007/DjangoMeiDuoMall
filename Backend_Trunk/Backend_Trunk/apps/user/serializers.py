@@ -1,10 +1,12 @@
 from rest_framework import serializers
-from .models import User
+from .models import User, Address
 import re
 from django_redis import get_redis_connection
 from rest_framework_jwt.settings import api_settings
 from .utils import get_user_by_account
 import logging
+from celery_tasks.email.tasks import send_verify_email
+from area.models import Area
 
 logger=logging.getLogger('django')
 
@@ -169,7 +171,138 @@ class Change_Password_Serializer(serializers.ModelSerializer):
 
 class UserInfoSerializer(serializers.ModelSerializer):
     class Meta:
-        model='User'
+        model=User
         fields=['id','username','mobile','email','email_active']
+
+
+class EmailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=User
+        fields=['id','username','email']
+        extra_kwargs={
+            'email':{
+                'required':True
+            },
+            'username': {
+                'read_only': True
+            },
+
+        }
+
+
+    def update(self, instance: User, validated_data):
+        instance.email=validated_data.get('email')
+        instance.save()
+
+        callbackurl= instance.generate_email_url()
+        send_verify_email.delay(validated_data.get('email'),instance.username,callbackurl)
+
+        return instance
+
+
+class EmailVericationSerializer(serializers.ModelSerializer):
+    token=serializers.CharField(label='确认邮件', write_only= True)
+    class Meta:
+        model=User
+        fields=['id','email', 'email_active', 'token']
+    """
+    fields中列出了要序列化器验证的字段， 如果设置了write only，就会从传入的数据，query_params中取
+    """
+
+    def validate(self, attrs):
+        token= attrs.get('token')
+        if not token:
+            raise serializers.ValidationError('Invalid Token for email activation')
+        user=User.Check_UserID_Email_token(token)
+        if user:
+            attrs['user']=user
+            return attrs
+        else:
+            raise serializers.ValidationError('Invalid Token for email activation')
+
+
+class AddressSerializer_List(serializers.ModelSerializer):
+    province=serializers.StringRelatedField(read_only=True)
+    city=serializers.StringRelatedField(read_only=True)
+    district=serializers.StringRelatedField(read_only=True)
+    """
+    在area中已经定义了__str__方法，直接返回name
+    """
+
+    class Meta:
+        model= Address
+        exclude=['user', 'is_deleted', 'create_time', 'update_time']
+
+
+class AddressSerializer_Create(serializers.ModelSerializer):
+
+    # this.form_address.receiver = '';
+    # this.form_address.province_id = '';
+    # this.form_address.city_id = '';
+    # this.form_address.district_id = '';
+    # this.form_address.place = '';
+    # this.form_address.mobile = '';
+    # this.form_address.tel = '';
+    # this.form_address.email = '';
+    province_id=serializers.IntegerField(min_value=0, write_only=True, allow_null=False)
+    district_id = serializers.IntegerField(min_value=0, write_only=True, allow_null=False)
+    city_id = serializers.IntegerField(min_value=0, write_only=True, allow_null=False)
+
+    class Meta:
+        model= Address
+        exclude = ['user', 'is_deleted', 'create_time', 'update_time']
+        extra_kwargs = {
+            'province': {
+                'read_only': True
+            },
+            'city': {
+                'read_only': True
+            },
+            'district': {
+                'read_only': True
+            },
+        }
+
+
+    def create(self, validated_data):
+        user=self.context['request'].user
+        new_address=Address()
+        new_address.user=user
+        new_address.is_deleted=False
+        new_address.receiver=validated_data.get('receiver')
+        new_address.tel=validated_data.get('tel')
+        new_address.place=validated_data.get('place')
+        new_address.title=validated_data.get('title')
+        new_address.province=Area.objects.get(id=validated_data.get('province_id'))
+        new_address.city=Area.objects.get(id=validated_data.get('city_id'))
+        new_address.district=Area.objects.get(id=validated_data.get('district_id'))
+
+        new_address.mobile=validated_data.get('mobile')
+        new_address.email=validated_data.get('email')
+        try:
+            new_address.save()
+        except Exception as error:
+            logger.error("Error in new user address saving")
+            raise serializers.ValidationError("Error in new user address saving")
+        validated_data['new_address']=new_address
+        return new_address
+
+
+class AddressSerializer_Update(serializers.ModelSerializer):
+    class Meta:
+        model= Address
+        fields=[]
+
+
+class AddressTitleSerialzer(serializers.ModelSerializer):
+    """
+    前端发送请求，修改地址名称， 如家的地址，公司地址等，请求方式是put
+    """
+    class Meta:
+        model=Address
+        fields=['title']
+
+
+
 
 

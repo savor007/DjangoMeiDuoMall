@@ -166,7 +166,7 @@ var vm = new Vue({
                 this.form_address.title = this.form_address.receiver;
                 if (this.editing_address_index === '') {
                     // 新增地址
-                    axios.post(this.host + '/addresses/', this.form_address, {
+                    axios.post(this.host + '/addresses_post/', this.form_address, {
                         headers: {
                             'Authorization': 'JWT ' + this.token
                         },
@@ -175,6 +175,7 @@ var vm = new Vue({
                     .then(response => {
                         // 将新地址添加大数组头部
                         this.addresses.splice(0, 0, response.data);
+                        console.log(this.addresses[0])
                         this.is_show_edit = false;
                     })
                     .catch(error => {
@@ -183,7 +184,7 @@ var vm = new Vue({
                 } else {
 
                     // 修改地址
-                    axios.put(this.host + '/addresses/' + this.addresses[this.editing_address_index].id + '/', this.form_address, {
+                    axios.put(this.host + '/address/' + this.addresses[this.editing_address_index].id + '/', this.form_address, {
                         headers: {
                             'Authorization': 'JWT ' + this.token
                         },

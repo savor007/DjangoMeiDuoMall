@@ -6,8 +6,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 # from rest_framework_jwt.views import obtain_jwt_token
 import random
-from .models import User
-from .serializers import CreateUserSerializer ,Change_Password_Serializer, UserInfoSerializer
+from .models import User, Address
+from .serializers import CreateUserSerializer ,Change_Password_Serializer, UserInfoSerializer, EmailSerializer, EmailVericationSerializer
+from .serializers import AddressSerializer_List, AddressSerializer_Create, AddressSerializer_Update , AddressTitleSerialzer
 from itsdangerous import TimedJSONWebSignatureSerializer as id_serializer
 from django.conf import settings
 from Backend_Trunk.apps.verification.serializers import ImageCodeSerializer
@@ -21,7 +22,9 @@ from Backend_Trunk.utils.constants import *
 from celery_tasks.sms.tasks import send_sms_code
 from rest_framework.generics import RetrieveAPIView
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.viewsets import ModelViewSet
 from rest_framework.status import HTTP_403_FORBIDDEN
+from rest_framework.decorators import action
 
 logger=logging.getLogger('django')
 
@@ -169,3 +172,143 @@ class UserInfoView(RetrieveAPIView):
         :return:
         """
         return self.request.user
+
+
+class EmailView(UpdateAPIView):
+    queryset = User.objects.all()
+    permission_classes = [IsAuthenticated]
+    serializer_class = EmailSerializer
+
+    """
+    调用updateAPIView时会用到update的方法，update时用会用到get_object,get_object默认使用pk
+    """
+
+    def get_serializer(self, *args, **kwargs):
+        return EmailSerializer(instance= self.request.user, data=self.request.data)
+
+    def get_object(self):
+        return self.request.user
+
+
+class EmailVerificationView(GenericAPIView):
+    queryset = User.objects.all()
+    serializer_class = EmailVericationSerializer
+
+    def get(self, request):
+        myserializer= self.get_serializer(data=request.query_params)
+        myserializer.is_valid(raise_exception= True)
+        user=myserializer.validated_data['user']
+        user.email_active=True
+        user.save()
+        return Response({"message":"OK"})
+
+
+
+class AddressViewSet(ModelViewSet):
+
+    permissions = [IsAuthenticated]
+
+    def get_queryset(self):
+        queryset=self.request.user.addresses.filter(is_deleted=False)
+        queryset2=Address.objects.filter(is_deleted=False, user_id=self.request.user.id)
+        return queryset
+
+
+
+
+    def get_serializer_class(self):
+        if self.action=='list':
+            return AddressSerializer_List
+        elif self.action in ['update','create'] :
+            return AddressSerializer_Create
+        elif self.action=='title':
+            return AddressTitleSerialzer
+        else:
+            None
+
+
+    def list(self, request, *args, **kwargs):
+        """
+        重写 list 方法，发送复合前端要求的RESPONSE数据
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        user=self.request.user
+        myserializer=self.get_serializer(instance=self.get_queryset(),many=True)
+        return Response(data={
+            "user_id":user.id,
+            "default_address_id":user.default_address_id,
+            "limit": USER_ADDRESS_COUNTS_LIMIT,
+            "addresses":myserializer.data,
+        })
+
+
+    def create(self,request, *args, **kwargs):
+         user=self.request.user
+         address_count=user.addresses.filter(is_deleted=False).count()
+         if address_count>=USER_ADDRESS_COUNTS_LIMIT:
+             return Response(data={
+                 "message":"保存地址数据已经达到上限"
+             })
+         logger.info("address request data: " + str(self.request.data))
+         myserializer=self.get_serializer(data=self.request.data)
+         if myserializer.is_valid()==False:
+            print(str(myserializer.errors))
+            raise Exception("validator error")
+         new_address= myserializer.save()
+
+         formatter_serializer=AddressSerializer_List(many=False, instance=new_address)
+         return Response(data= {
+             "address":formatter_serializer.data
+         })
+
+    def destroy(self, request, *args, **kwargs):
+        address=self.get_object()
+        address.is_deleted=True
+        address.save()
+        return Response(data={
+            "message":"OK"
+        })
+
+
+    @action(method=['put'], detail=True)
+    def defaultaddress(self, request, *args, **kwargs):
+        user=self.request.user
+        address = self.get_object()
+        user.default_address=address
+        user.save()
+        return Response(data={
+            "message":"OK"
+        })
+
+
+
+    @action(method=['put'], detail=True)
+    def title(self, request, *args, **kwargs):
+        address=self.get_object()
+        myserializer=self.get_serializer(instance= address, data= self.request.data)
+        if myserializer.is_valid()==False:
+            logger.error(myserializer.errors)
+            raise Exception("validator error")
+        myserializer.save()
+        return Response(data=myserializer.data)
+
+
+    def update(self,request, *args, **kwargs):
+         logger.info("address request data: " + str(self.request.data))
+         myserializer=self.get_serializer(instance= self.get_object(), data=self.request.data)
+         if myserializer.is_valid()==False:
+            print(str(myserializer.errors))
+            raise Exception("validator error")
+         new_address= myserializer.save()
+
+         formatter_serializer=AddressSerializer_List(many=False, instance=new_address)
+         return Response(data= {
+             "address":formatter_serializer.data
+         })
+
+
+
+

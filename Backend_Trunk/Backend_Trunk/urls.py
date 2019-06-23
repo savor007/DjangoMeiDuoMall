@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^image_codes/(?P<image_code_id>.+)/$', Get_Image_Verification_Code),
     url(r'^sms_codes/(?P<mobile>1[35678][0-9]{9})/', Get_SMS_Verification_Code.as_view()),
     url(r'^', include('user.urls')),
-    url(r'^oauth/', include('oauth.urls'))
-
+    url(r'^oauth/', include('oauth.urls')),
+    url(r'', include('area.urls')),
+    url(r'', include('goods.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

@@ -15,5 +15,13 @@ urlpatterns = [
     url(r'^sms_codes/', views.SMS_Verifcation_ByToken.as_view()),
     url(r'^accounts/(?P<account>\w{5,20})/password/token/', views.Password_Token.as_view()),
     url(r'^users/(?P<pk>\d+)/password/$', views.PasswordVIEW.as_view()),
-    url(r'^user_info/$', views.UserInfoView.as_view())
+    url(r'^user_info/$', views.UserInfoView.as_view()),
+    url(r'^emails/$', views.EmailView.as_view()),
+    url(r'^emails/verification/', views.EmailVerificationView.as_view()),
+    url(r'^addresses/$', views.AddressViewSet.as_view({'get':'list'})),
+    url(r'^addresses_post/$', views.AddressViewSet.as_view({'post':'create'})),
+    url(r'^addresses/(?P<pk>\d+)/$', views.AddressViewSet.as_view({'delete':'destroy'})),
+    url(r'^addresses/(?P<pk>\d+)/status/$', views.AddressViewSet.as_view({'put':'defaultaddress'})),
+    url(r'^addresses/(?P<pk>\d+)/title/$', views.AddressViewSet.as_view({'put':'title'})),
+    url(r'^address/(?P<pk>\d+)/$', views.AddressViewSet.as_view({'put':'update'})),
 ]

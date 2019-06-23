@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="meiduo_mall@10.144.152.67" uuid="23d7c4a6-c027-46d5-995d-df95300104fb">
+    <data-source name="meiduo_mall@10.144.157.48" uuid="23d7c4a6-c027-46d5-995d-df95300104fb">
       <database-info product="MySQL" version="5.7.26-0ubuntu0.16.04.1-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.26">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -11,7 +11,7 @@
       <user-name>WinsonSun</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
-    <data-source name="meiduo_mall@192.168.0.120" uuid="a90df397-1950-479d-bbd6-b0388a237a28">
+    <data-source name="meiduo_mall@192.168.210.128" uuid="a90df397-1950-479d-bbd6-b0388a237a28">
       <database-info product="MySQL" version="5.7.26-0ubuntu0.16.04.1-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.26">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
