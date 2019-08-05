@@ -6,6 +6,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 # from rest_framework_jwt.views import obtain_jwt_token
 import random
+
+from rest_framework_jwt.views import ObtainJSONWebToken
+
+from cart.utils import Merge_Cookie_Cart
 from .models import User, Address
 from .serializers import CreateUserSerializer ,Change_Password_Serializer, UserInfoSerializer, EmailSerializer, EmailVericationSerializer
 from .serializers import AddressSerializer_List, AddressSerializer_Create, AddressSerializer_Update , AddressTitleSerialzer
@@ -308,6 +312,25 @@ class AddressViewSet(ModelViewSet):
          return Response(data= {
              "address":formatter_serializer.data
          })
+
+
+
+class ObtainJSONwebTokenwithCookies(ObtainJSONWebToken):
+    def post(self, request, *args, **kwargs):
+        response= super(ObtainJSONwebTokenwithCookies, self).post(request)
+
+        if response.status_code == HTTP_200_OK:
+            serializer = self.get_serializer(data=request.data)
+            if serializer.is_valid():
+                user = serializer.object.get('user') or request.user
+                response= Merge_Cookie_Cart(user_id=user.id, request=request, response=response)
+        return response
+
+
+
+
+
+
 
 
 

@@ -14,7 +14,8 @@ var vm = new Vue({
         qq_login:function(){
             var state=this.get_query_string('next') || '/';
             axios.get(this.host + '/oauth/qq/authorization/?state=' + state, {
-                    responseType: 'json'
+                    responseType: 'json',
+                    withCredentials: true,
                 })
                 .then(response => {
                     location.href = response.data.auth_url;
@@ -60,6 +61,7 @@ var vm = new Vue({
                         password: this.password
                     }, {
                         responseType: 'json',
+                        withCredentials: true,
                     })
                     .then(response => {
                         // 使用浏览器本地存储保存token

@@ -31,7 +31,7 @@ SECRET_KEY = 'w1ilwh+ebh%u^#v!r(q#s-+3mdh%d^zs3)lnywmjpi!$22s@l*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.meiduo.site','www.meiduo.site', '127.0.0.1']
+ALLOWED_HOSTS = ['api.meiduo.site','www.meiduo.site', '127.0.0.1','192.168.210.128']
 
 #REMOTE_DATABASE_IPADRRESS = "10.144.157.48"
 REMOTE_DATABASE_IPADRRESS = "192.168.210.128"
@@ -49,12 +49,19 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'django_crontab',
+    'haystack',
+    'xadmin',
+    'crispy_forms',
+    'reversion',
     'user.apps.UserConfig',
     'verification.apps.VerificationConfig',
     'oauth.apps.OauthConfig',
     'area.apps.AreaConfig',
     'goods.apps.GoodsConfig',
-    'advertisements.apps.AdvertisementsConfig'
+    'advertisements.apps.AdvertisementsConfig',
+    'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
+    'payments.apps.PaymentsConfig'
 
 ]
 
@@ -129,6 +136,13 @@ CACHES={
     "browser_histroy": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://"+REMOTE_DATABASE_IPADRRESS+"/4",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "carts": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://"+REMOTE_DATABASE_IPADRRESS+"/5",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -246,6 +260,8 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8000',
     'http://www.meiduo.site:8080',
     'http://api.meiduo.site:8000',
+    'http://www.meiduo.site',
+    'http://192.168.210.128:80'
 )
 
 CORS_ALLOW_CREDENTIALS =True
@@ -303,4 +319,31 @@ TEMPLATES=[
 CRONJOBS=[('*/5 * * * *', 'advertisements.crons.generate_static_index_html', '>>/Users/sunwei/Documents/Django Practice/DjangoMeiDuoMall/Backend_Trunk/logs/crontab.log')]
 CRONTAB_COMMAND_PREFIX='LANG_ALL=zh_cn.UTF-8'
 
+
+"""
+设置haystack的搜索引擎
+"""
+HAYSTACK_CONNECTIONS={
+    'default':{
+        'ENGINE':'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL':'http://192.168.210.128:9200',   #9200是elasticasearch运行的服务器IP地址和端口号
+        'INDEX_NAME':'meiduo',
+    }
+}
+
+"""
+1. 当程序运行之前手动生成索引
+2.后端修改数据后自动实时生成索引, HAYSTACK_SIGNAL_PROCESSOR保证django运行起来以后，有新的数据产生时，haystack
+依然可以让elesticsearch实时产生新数据的索引
+"""
+HAYSTACK_SIGNAL_PROCESSOR='haystack.signals.RealtimeSignalProcessor'
+
+"""
+关于支付宝支付
+"""
+ALIPAY_APPID='2016101100662391'
+ALIPAY_URL='https://openapi.alipaydev.com/gateway.do?'
+ALIPAY_DEBUG=True
+
+STATIC_ROOT=os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)),'FrondENDMaterials/static')
 

@@ -8,6 +8,7 @@ import logging
 from .models import OAuthQQUser
 from rest_framework_jwt.settings import api_settings
 from .serializers import BandOpenIDSerializer
+from cart.utils import Merge_Cookie_Cart
 
 
 from .utils import OAuth
@@ -55,6 +56,7 @@ class OpenIDView(APIView):
                     'username':username,
                     'user_id':user_id,
                 }, status= HTTP_200_OK)
+                response= Merge_Cookie_Cart (user_id=oauth_user.user.id, request=request, response=response)
                 return response
 
 
@@ -78,6 +80,7 @@ class OpenIDUserView(CreateAPIView):
             'username': qqauthuser.user.username,
             'user_id': qqauthuser.user.id,
         }, status=HTTP_200_OK)
+        response = Merge_Cookie_Cart(user_id=qqauthuser.user.id, request=request, response=response)
         return response
 
     def perform_create(self, serializer):

@@ -101,6 +101,7 @@ var vm = new Vue({
             this.check_image_code();
 
             if (this.error_username == false && this.error_image_code == false) {
+                
                 axios.get(this.host+'/accounts/' + this.username + '/sms/token/?text='+ this.image_code + '&image_code_id=' + this.image_code_id, {
                         responseType: 'json'
                     })

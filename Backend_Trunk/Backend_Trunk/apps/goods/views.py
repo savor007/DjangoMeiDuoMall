@@ -8,8 +8,9 @@ from rest_framework.views import APIView
 from .models import SKU
 from Backend_Trunk.utils.constants import HOT_SKU_COUNT, USER_BROWSER_HISTORY_COUNT
 from rest_framework_extensions.cache.mixins import ListCacheResponseMixin
-from .serializers import HotSKUSerializer
+from .serializers import HotSKUSerializer, SKUIndexSerializer
 from django_redis import get_redis_connection
+from drf_haystack.viewsets import HaystackViewSet
 # Create your views here.
 import logging
 
@@ -73,6 +74,14 @@ class GoodsinCategory(ListAPIView):
         category_id = self.kwargs.get('category_id')
         return SKU.objects.filter(category_id=category_id, is_launched=True)
 
+
+
+class SKUSearchViewSet(HaystackViewSet):
+    """
+    SKU搜索
+    """
+    index_models = [SKU]
+    serializer_class = SKUIndexSerializer
 
 
 
