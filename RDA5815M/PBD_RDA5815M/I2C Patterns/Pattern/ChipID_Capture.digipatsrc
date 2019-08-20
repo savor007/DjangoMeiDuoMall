@@ -1,0 +1,84 @@
+//  HEADER COMMENT 1 
+//  HEADER COMMENT 2 
+//  
+
+file_format_version 1.0;
+timeset I2CR_tset1, I2CR_tset3, I2CR_tset4;
+
+pattern READChipID_Capture (SCLK, SDA)
+{
+capture_start(CaptureWaveform)		I2CR_tset1		1		1;
+									I2CR_tset1		1		1;
+									I2CR_tset1		1		1;
+									I2CR_tset1		1		1;
+									I2CR_tset1		1		1;		// Read Chipset  Reg=0xE4  Data=0XAC4C Start 0
+									I2CR_tset3		1		0;		//  Start 1
+									I2CR_tset3		1		1;		//  ID6
+									I2CR_tset3		1		1;		//  ID5
+									I2CR_tset3		1		0;		//  ID4
+									I2CR_tset3		1		0;		//  ID3
+									I2CR_tset3		1		0;		//  ID2
+									I2CR_tset3		1		0;		//  ID1
+									I2CR_tset3		1		1;		//  ID0
+									I2CR_tset3		1		0;		//  W
+									I2CR_tset3		1		L;		//  ACK
+									I2CR_tset3		1		1;		//  ADD7
+									I2CR_tset3		1		1;		//  ADD6
+									I2CR_tset3		1		1;		//  ADD5
+									I2CR_tset3		1		0;		//  ADD4
+									I2CR_tset3		1		0;		//  ADD3
+									I2CR_tset3		1		1;		//  ADD2
+									I2CR_tset3		1		0;		//  ADD1
+									I2CR_tset3		1		0;		//  ADD0
+									I2CR_tset3		1		L;		//  ACK
+									I2CR_tset4		1		1;		//  Start 0
+									I2CR_tset3		1		0;		//  Start 1
+									I2CR_tset3		1		1;		//  ID6
+									I2CR_tset3		1		1;		//  ID5
+									I2CR_tset3		1		0;		//  ID4
+									I2CR_tset3		1		0;		//  ID3
+									I2CR_tset3		1		0;		//  ID2
+									I2CR_tset3		1		0;		//  ID1
+									I2CR_tset3		1		1;		//  ID0
+									I2CR_tset3		1		1;		//  R
+									I2CR_tset3		1		L;		//  ACK
+capture								I2CR_tset3		1		V;		//  Data15  AC
+capture								I2CR_tset3		1		V;		//  Data14
+capture								I2CR_tset3		1		V;		//  Data13
+capture								I2CR_tset3		1		V;		//  Data12
+capture								I2CR_tset3		1		V;		//  Data11
+capture								I2CR_tset3		1		V;		//  Data10
+capture								I2CR_tset3		1		V;		//  Data09
+capture								I2CR_tset3		1		V;		//  Data08
+									I2CR_tset3		1		0;		//  ACK
+capture								I2CR_tset3		1		V;		//  Data07   4C
+capture								I2CR_tset3		1		V;		//  Data06
+capture								I2CR_tset3		1		V;		//  Data05
+capture								I2CR_tset3		1		V;		//  Data04
+capture								I2CR_tset3		1		V;		//  Data03
+capture								I2CR_tset3		1		V;		//  Data02
+capture								I2CR_tset3		1		V;		//  Data01
+capture								I2CR_tset3		1		V;		//  Data0
+									I2CR_tset3		1		X;		//  ACK
+									I2CR_tset1		1		0;		//  Stop 0
+capture_stop						I2CR_tset1		1		1;		//  Stop 1
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+//  
+// *** Bus Free ***
+halt								I2CR_tset1		X		X;
+}

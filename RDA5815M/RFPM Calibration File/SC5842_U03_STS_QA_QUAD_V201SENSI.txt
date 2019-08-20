@@ -1,0 +1,147 @@
+-- config revision
+Revision = 0.5;
+OldestCompatibleRevision = 0.5;
+
+-- Easy to use constants
+kilo = 1e3;
+Mega = 1e6;
+Giga = 1e9;
+
+SourceCalibrationSettings["TX"] = 
+{
+   ["type"] = "list",
+   
+   ["list"] = 
+   {
+      {
+          ["freq"] = 87*Mega,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 108*Mega,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 2.402*Giga,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 2.441*Giga,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 2.48*Giga,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 946.8*Mega,
+          ["portPower"] = -10,
+      },
+      {
+          ["freq"] = 1.5398*Giga,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 1.5408*Giga,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 2.1568*Giga,
+          ["portPower"] = -25,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["portPower"] = -30,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 1.56*Giga,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 951.8*Mega,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["portPower"] = -45,
+      },
+      {
+          ["freq"] = 2.1518*Giga,
+          ["portPower"] = -45,
+      }
+}
+};
+
+ReceiverCalibrationSettings["RX"] = 
+{
+   ["type"] = "list",
+   
+   ["list"] = 
+   {
+      {
+          ["freq"] = 87*Mega,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 108*Mega,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 2.402*Giga,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 2.441*Giga,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 2.48*Giga,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 946.8*Mega,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 1.5398*Giga,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 1.5408*Giga,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 2.1568*Giga,
+          ["referenceLevel"] = -25,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["referenceLevel"] = -30,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 1.56*Giga,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 951.8*Mega,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["referenceLevel"] = -45,
+      },
+      {
+          ["freq"] = 2.1518*Giga,
+          ["referenceLevel"] = -45,
+      }
+}
+};
+

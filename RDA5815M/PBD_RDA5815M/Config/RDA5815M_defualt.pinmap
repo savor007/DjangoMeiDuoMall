@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PinMap schemaVersion="1.2" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Pins>
+		<DUTPin name="VBAT" />
+		<DUTPin name="SDA" />
+		<DUTPin name="SCLK" />
+		<DUTPin name="AGC" />
+		<DUTPin name="AVDD" />
+		<DUTPin name="DVDD" />
+		<DUTPin name="RFIN" />
+		<DUTPin name="LOOPOUT" />
+		<DUTPin name="IP" />
+		<DUTPin name="IN" />
+		<DUTPin name="QP" />
+		<DUTPin name="QN" />
+		<DUTPin name="Xout_en" />
+	</Pins>
+	<PinGroups>
+		<PinGroup name="Source_Pins">
+			<PinReference pin="RFIN" />
+		</PinGroup>
+		<PinGroup name="Receive_Pins">
+			<PinReference pin="LOOPOUT" />
+		</PinGroup>
+		<PinGroup name="I2CPin">
+			<PinReference pin="SDA" />
+			<PinReference pin="SCLK" />
+		</PinGroup>
+	</PinGroups>
+	<Instruments>
+		<NIDCPowerInstrument name="SMU_4145_C2_S3" numberOfChannels="4" />
+		<NIRFPMInstrument name="VST_5644R" maxPortNumber="12" calibrationFilePath="C:\Users\STS\Desktop\RDA5815M\RFPM Calibration File\RF Calibration Data.tdms" iviSwitchName="VST_5646R_C1_S4" fpgaFilePath="C:\Users\Public\Documents\National Instruments\FPGA Extensions Bitfiles\NI PXIe-5644R\NI-5530.lvbitx" />
+		<Multiplexer name="Spiliter1" multiplexerTypeId="1to4" />
+		<NIDigitalPatternInstrument name="PBD_6570_C2_S6" numberOfChannels="32" />
+		<Instrument name="Digitizer_5105_C1_S14" instrumentTypeId="DIGITIZER">
+			<ChannelGroup id="DIGITIZER">
+				<Channel id="0" />
+				<Channel id="1" />
+				<Channel id="2" />
+				<Channel id="3" />
+				<Channel id="4" />
+				<Channel id="5" />
+				<Channel id="6" />
+				<Channel id="7" />
+			</ChannelGroup>
+		</Instrument>
+	</Instruments>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="AGC" siteNumber="0" instrument="PBD_6570_C2_S6" channel="13" />
+		<Connection pin="AVDD" siteNumber="0" instrument="PBD_6570_C2_S6" channel="28" />
+		<Connection pin="DVDD" siteNumber="0" instrument="PBD_6570_C2_S6" channel="0" />
+		<Connection pin="IP" siteNumber="0" instrument="Digitizer_5105_C1_S14" channel="1" />
+		<Connection pin="IN" siteNumber="0" instrument="Digitizer_5105_C1_S14" channel="0" />
+		<Connection pin="LOOPOUT" siteNumber="0" instrument="VST_5644R" channel="port2" />
+		<Connection pin="QN" siteNumber="0" instrument="Digitizer_5105_C1_S14" channel="2" />
+		<Connection pin="QP" siteNumber="0" instrument="Digitizer_5105_C1_S14" channel="3" />
+		<Connection pin="RFIN" siteNumber="0" instrument="VST_5644R" channel="port1" />
+		<Connection pin="SCLK" siteNumber="0" instrument="PBD_6570_C2_S6" channel="18" />
+		<Connection pin="SDA" siteNumber="0" instrument="PBD_6570_C2_S6" channel="9" />
+		<Connection pin="VBAT" siteNumber="0" instrument="SMU_4145_C2_S3" channel="0" />
+		<Connection pin="Xout_en" siteNumber="0" instrument="PBD_6570_C2_S6" channel="14" />
+	</Connections>
+</PinMap>

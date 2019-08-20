@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BinDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xmlns="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions">
+  <HardwareBins>
+    <Bin name="Pass" number="1" type="Pass" />
+    <Bin name="OS_Fail" number="2" type="Fail" />
+    <Bin name="DC_Fail" number="3" type="Fail" />
+    <Bin name="Other_Fail" number="4" type="Fail" />
+    <Bin name="Phase_noise_Fail" number="5" type="Fail" />
+  </HardwareBins>
+  <SoftwareBins errorBin="3" defaultFailBin="2" defaultPassBin="1">
+    <Bin name="Pass" number="1" hardwareBin="1" />
+    <Bin name="CONTI_Fail" number="2" hardwareBin="2" />
+    <Bin name="IDD_PowerDown_Fail" number="3" hardwareBin="3" />
+    <Bin name="Read_ChipID_Fail" number="4" hardwareBin="3" />
+    <Bin name="IDD_PowerUp_Fail" number="5" hardwareBin="3" />
+    <Bin name="SNR_945M_Fail" number="6" hardwareBin="4" />
+    <Bin name="SNR_1538M_Fail" number="7" hardwareBin="4" />
+    <Bin name="SNR_1539M_Fail" number="8" hardwareBin="4" />
+    <Bin name="SNR_2155M_Fail" number="9" hardwareBin="4" />
+    <Bin name="DC_1550M_80dBm_Fail" number="10" hardwareBin="4" />
+    <Bin name="2M_1550M3DB_Fail" number="11" hardwareBin="4" />
+    <Bin name="5M_1550M3DB_Fail" number="12" hardwareBin="4" />
+    <Bin name="10M_1550M3DB_Fail" number="13" hardwareBin="4" />
+    <Bin name="GLoop_950M_Fail" number="14" hardwareBin="4" />
+    <Bin name="GLoop_1550M_Fail" number="15" hardwareBin="4" />
+    <Bin name="GLoop_2150M_Fail" number="16" hardwareBin="4" />
+    <Bin name="Xout_Fail" number="18" hardwareBin="4" />
+    <Bin name="XtalCry_Fail" number="19" hardwareBin="4" />
+    <Bin name="PowerLoop_Fail" number="20" hardwareBin="3" />
+    <Bin name="PrePowerDown_Fail" number="21" hardwareBin="3" />
+    <Bin name="PrePowerUp_Fail" number="22" hardwareBin="3" />
+    <Bin name="Phase_noise_945M" number="30" hardwareBin="5" />
+    <Bin name="Phase_noise_1538M" number="31" hardwareBin="5" />
+    <Bin name="Phase_noise_1539M" number="32" hardwareBin="5" />
+    <Bin name="Phase_noise_2150M" number="33" hardwareBin="5" />
+    <Bin name="Phase_noise_1550M" number="34" hardwareBin="5" />
+    <Bin name="Read_Register_Fail" number="401" hardwareBin="3" />
+  </SoftwareBins>
+</BinDefinitions>

@@ -1,0 +1,177 @@
+-- config revision
+Revision = 0.5;
+OldestCompatibleRevision = 0.5;
+
+-- Easy to use constants
+kilo = 1e3;
+Mega = 1e6;
+Giga = 1e9;
+
+SourceCalibrationSettings["TX"] = 
+{
+   ["type"] = "list",
+   -- frequency list
+   ["list"] =
+   {
+      {
+      ["freq"] = 946.8*Mega,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+    {
+      ["freq"] = 1.5398*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+    {
+      ["freq"] = 1.5408*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 2.1568*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 1.5518*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 1.552*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+	  {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 1.56*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 951.8*Mega,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+	{
+      ["freq"] = 2.1518*Giga,
+      ["referenceLevel"] = -5,
+      ["RFSAReferenceLevel"] = 0,
+      ["portPower"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      ["5530_TXPath"] = "DIRECT",
+      ["5530_RXPath"] = "GAIN",
+      ["calibrationSettings"] = 
+      {
+        ["IFBW"] = 1000,
+        ["vectorCal_Power"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["vectorCal_Power_powerMeter"] = {-5, -5, -5, -5, -5, -5, -5, -5},
+        ["scalarCal_Power_sourceCal"] = {-10, -10, -10, -10, -10, -10, -10, -10},
+      }
+    },
+   }
+};
+
+ReceiverCalibrationSettings["RX"] = 
+{
+   ["type"] = "list",
+   
+   ["list"] = 
+   {
+
+      {
+          ["freq"] = 951.8*Mega,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 1.5518*Giga,
+          ["referenceLevel"] = -10,
+      },
+      {
+          ["freq"] = 2.1518*Giga,
+          ["referenceLevel"] = -10,
+      }
+}
+};
+
+
+

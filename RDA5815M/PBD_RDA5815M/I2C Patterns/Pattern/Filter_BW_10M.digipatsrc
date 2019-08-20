@@ -1,0 +1,389 @@
+//  HEADER COMMENT 1 
+//  HEADER COMMENT 2 
+//  
+//  
+//  
+file_format_version 1.0;
+timeset SClock;
+timeset ;
+
+pattern Filter_BW_10M (SCLK,SDA)
+{
+		SClock	1 1 ; // Start 
+		SClock	1 1 ; // Start 
+		SClock	1 1 ; // Start 
+		SClock	1 1 ; // Start 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x04  Data=0XE5
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 0 ; // ADD1 
+			1 0 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 1 ; // Data06 
+			1 1 ; // Data05 
+			1 0 ; // Data04 
+			1 0 ; // Data03 
+			1 1 ; // Data02 
+			1 0 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x2B  Data=0X95
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 1 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 1 ; // Data04 
+			1 0 ; // Data03 
+			1 1 ; // Data02 
+			1 0 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x07  Data=0X07
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 0 ; // Data04 
+			1 0 ; // Data03 
+			1 1 ; // Data02 
+			1 1 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x08  Data=0X2D
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 0 ; // ADD1 
+			1 0 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 0 ; // Data06 
+			1 1 ; // Data05 
+			1 0 ; // Data04 
+			1 1 ; // Data03 
+			1 1 ; // Data02 
+			1 0 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x09  Data=0X09
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 0 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 0 ; // Data04 
+			1 1 ; // Data03 
+			1 0 ; // Data02 
+			1 0 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x0A  Data=0X7B
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 1 ; // ADD1 
+			1 0 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 1 ; // Data06 
+			1 1 ; // Data05 
+			1 1 ; // Data04 
+			1 1 ; // Data03 
+			1 0 ; // Data02 
+			1 1 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x0B  Data=0X0A
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 0 ; // Data04 
+			1 1 ; // Data03 
+			1 0 ; // Data02 
+			1 1 ; // Data01 
+			1 0 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x04  Data=0XC7
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 0 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 0 ; // ADD1 
+			1 0 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 1 ; // Data06 
+			1 0 ; // Data05 
+			1 0 ; // Data04 
+			1 0 ; // Data03 
+			1 1 ; // Data02 
+			1 1 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x2B  Data=0X97
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 1 ; // ADD5 
+			1 0 ; // ADD4 
+			1 1 ; // ADD3 
+			1 0 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 1 ; // Data04 
+			1 0 ; // Data03 
+			1 1 ; // Data02 
+			1 1 ; // Data01 
+			1 1 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x16  Data=0X3C
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 1 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 1 ; // ADD1 
+			1 0 ; // ADD0 
+			1 L ; // Ack 
+			1 0 ; // Data07 
+			1 0 ; // Data06 
+			1 1 ; // Data05 
+			1 1 ; // Data04 
+			1 1 ; // Data03 
+			1 1 ; // Data02 
+			1 0 ; // Data01 
+			1 0 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0x17  Data=0XFA
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 0 ; // ADD7 
+			1 0 ; // ADD6 
+			1 0 ; // ADD5 
+			1 1 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 1 ; // Data06 
+			1 1 ; // Data05 
+			1 1 ; // Data04 
+			1 1 ; // Data03 
+			1 0 ; // Data02 
+			1 1 ; // Data01 
+			1 0 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+		SClock	1 1 ; // Start 
+			1 0 ; // Start 
+			1 1 ; // ID6 Write Chipset  Reg=0xB7  Data=0X80
+			1 0 ; // ID5 
+			1 1 ; // ID4 
+			1 1 ; // ID3 
+			1 0 ; // ID2 
+			1 0 ; // ID1 
+			1 0 ; // ID0 
+			1 0 ; // W 
+			1 L ; // Ack 
+			1 1 ; // ADD7 
+			1 0 ; // ADD6 
+			1 1 ; // ADD5 
+			1 1 ; // ADD4 
+			1 0 ; // ADD3 
+			1 1 ; // ADD2 
+			1 1 ; // ADD1 
+			1 1 ; // ADD0 
+			1 L ; // Ack 
+			1 1 ; // Data07 
+			1 0 ; // Data06 
+			1 0 ; // Data05 
+			1 0 ; // Data04 
+			1 0 ; // Data03 
+			1 0 ; // Data02 
+			1 0 ; // Data01 
+			1 0 ; // Data00 
+			1 L ; // Ack 
+		SClock	1 0 ; // Stop 
+		SClock	1 1 ; // Stop 
+	halt	SClock	1 1 ; // *** Bus Free ***
+}

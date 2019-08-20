@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TimingFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.0" xmlns="http://www.ni.com/Semiconductor/Timing">
+  <TimingSheet>
+    <TimeSets>
+      <TimeSet name="I2CR_tset1">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="I2CR_tset3">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <ReturnToLow>
+              <On>0</On>
+              <Data>ac.IICR*0.35</Data>
+              <Return>ac.IICR*0.7</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToLow>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.6</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>ac.IICR*0.1</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="I2CR_debug">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <ReturnToLow>
+              <On>0</On>
+              <Data>0</Data>
+              <Return>ac.IICR</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToLow>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="I2CR_tset4">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <ReturnToHigh>
+              <On>ac.IICR*0.2</On>
+              <Data>ac.IICR*0.35</Data>
+              <Return>ac.IICR*0.8</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToHigh>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <ReturnToHigh>
+              <On>0</On>
+              <Data>ac.IICR*0.1</Data>
+              <Return>ac.IICR*0.8</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToHigh>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="I2CR_tset5">
+        <Period>ac.IIC</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <ReturnToLow>
+              <On>0</On>
+              <Data>ac.IICR*0.35</Data>
+              <Return>ac.IICR*0.8</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToLow>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.6</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>ac.IICR*0.1</On>
+              <Data>ac.IICR*0.2</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="TSET1">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="TSET2">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+      <TimeSet name="TSET3">
+        <Period>ac.IICR</Period>
+        <PinEdges>
+          <PinEdge pin="SCLK">
+            <DriveNonReturn>
+              <On>0</On>
+              <Data>0</Data>
+              <Off>ac.IICR</Off>
+            </DriveNonReturn>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+          <PinEdge pin="SDA">
+            <ReturnToLow>
+              <On>ac.IICR*0.3</On>
+              <Data>ac.IICR*0.4</Data>
+              <Return>ac.IICR</Return>
+              <Off>ac.IICR</Off>
+            </ReturnToLow>
+            <CompareStrobe>
+              <Strobe>ac.IICR*0.5</Strobe>
+            </CompareStrobe>
+            <DataSource>Pattern</DataSource>
+          </PinEdge>
+        </PinEdges>
+      </TimeSet>
+    </TimeSets>
+  </TimingSheet>
+</TimingFile>

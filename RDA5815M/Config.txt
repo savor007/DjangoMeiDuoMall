@@ -1,0 +1,4 @@
+[Config]
+Flash_Type = PUYA_U03
+Flash_Size = 4M
+clear_data_protect = true

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PinMap schemaVersion="1.2" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Pins>
+		<DUTPin name="VBAT" />
+		<DUTPin name="SDA" />
+		<DUTPin name="SCLK" />
+		<DUTPin name="AGC" />
+		<DUTPin name="AVDD" />
+		<DUTPin name="DVDD" />
+		<DUTPin name="RFIN" />
+		<DUTPin name="LOOPOUT" />
+		<DUTPin name="IP" />
+		<DUTPin name="IN" />
+		<DUTPin name="QP" />
+		<DUTPin name="QN" />
+		<DUTPin name="Xout_en" />
+		<DUTPin name="K1" />
+		<DUTPin name="K2" />
+		<DUTPin name="K3" />
+		<DUTPin name="K4" />
+		<DUTPin name="XOUT" />
+		<SystemPin name="Relay_6V" />
+		<SystemPin name="Pullup_3v3" />
+		<DUTPin name="BBIN" />
+		<DUTPin name="BBIP" />
+		<DUTPin name="BBQN" />
+		<DUTPin name="BBQP" />
+	</Pins>
+	<PinGroups>
+		<PinGroup name="Source_Pins">
+			<PinReference pin="RFIN" />
+		</PinGroup>
+		<PinGroup name="Receive_Pins">
+			<PinReference pin="LOOPOUT" />
+		</PinGroup>
+		<PinGroup name="I2CPin">
+			<PinReference pin="SDA" />
+			<PinReference pin="SCLK" />
+		</PinGroup>
+	</PinGroups>
+	<Instruments>
+		<NIDCPowerInstrument name="SMU_4145_C1_S16" numberOfChannels="4" />
+		<NIDigitalPatternInstrument name="PBD_6570_C2_S6" numberOfChannels="32" />
+		<NIDigitalPatternInstrument name="PBD_6570_C2_S8" numberOfChannels="32" />
+		<NIDigitalPatternInstrument name="PBD_6570_C2_S4" numberOfChannels="32" />
+		<NIDigitalPatternInstrument name="PBD_6570_C1_S13" numberOfChannels="32" />
+		<Instrument name="Digitizer_5105_C2_S12" instrumentTypeId="DIGITIZER">
+			<ChannelGroup id="DIGITIZER">
+				<Channel id="0" />
+				<Channel id="1" />
+				<Channel id="2" />
+				<Channel id="3" />
+				<Channel id="4" />
+				<Channel id="5" />
+				<Channel id="6" />
+				<Channel id="7" />
+			</ChannelGroup>
+		</Instrument>
+		<Instrument name="Digitizer_5105_C2_S17" instrumentTypeId="DIGITIZER">
+			<ChannelGroup id="DIGITIZER">
+				<Channel id="0" />
+				<Channel id="1" />
+				<Channel id="2" />
+				<Channel id="3" />
+				<Channel id="4" />
+				<Channel id="5" />
+				<Channel id="6" />
+				<Channel id="7" />
+			</ChannelGroup>
+		</Instrument>
+		<NIRFPMInstrument name="VST_5646R_C1_S4" maxPortNumber="8" calibrationFilePath="C:\Users\STS\Perforce\qsong_STS-NI_8084\Solutions\RDA\RDA5815M\Dev\qsong\2.1\RDA5815M\cal\Cal1.tdms" iviSwitchName="VST_5646R_C1_S4" fpgaFilePath="C:\Users\Public\Documents\National Instruments\FPGA Extensions Bitfiles\NI PXIe-5646R\NI-RFIC.lvbitx" />
+		<Instrument name="RELAY_2567_C1_S15" instrumentTypeId="RelayDriver">
+			<ChannelGroup id="RelayDriver_allChannels">
+				<Channel id="CH0" />
+				<Channel id="CH1" />
+				<Channel id="CH2" />
+				<Channel id="CH3" />
+				<Channel id="CH4" />
+				<Channel id="CH5" />
+				<Channel id="CH6" />
+				<Channel id="CH7" />
+				<Channel id="CH8" />
+				<Channel id="CH10" />
+				<Channel id="CH11" />
+				<Channel id="CH12" />
+				<Channel id="CH13" />
+				<Channel id="CH14" />
+				<Channel id="CH15" />
+				<Channel id="CH16" />
+				<Channel id="CH17" />
+				<Channel id="CH18" />
+				<Channel id="CH19" />
+				<Channel id="CH25" />
+				<Channel id="CH26" />
+				<Channel id="CH27" />
+				<Channel id="CH31" />
+				<Channel id="CH40" />
+				<Channel id="CH41" />
+				<Channel id="CH44" />
+				<Channel id="CH45" />
+				<Channel id="CH46" />
+				<Channel id="CH57" />
+				<Channel id="CH58" />
+				<Channel id="CH59" />
+				<Channel id="CH62" />
+				<Channel id="CH63" />
+			</ChannelGroup>
+		</Instrument>
+		<NIDCPowerInstrument name="SMU_4110_C2_S2" numberOfChannels="3" />
+	</Instruments>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+		<Site siteNumber="2" />
+		<Site siteNumber="3" />
+	</Sites>
+	<Connections>
+		<Connection pin="AGC" siteNumber="0" instrument="PBD_6570_C2_S8" channel="10" />
+		<Connection pin="AGC" siteNumber="1" instrument="PBD_6570_C1_S13" channel="6" />
+		<Connection pin="AGC" siteNumber="2" instrument="PBD_6570_C2_S6" channel="6" />
+		<Connection pin="AGC" siteNumber="3" instrument="PBD_6570_C2_S4" channel="6" />
+		<Connection pin="AVDD" siteNumber="0" instrument="PBD_6570_C2_S8" channel="3" />
+		<Connection pin="AVDD" siteNumber="1" instrument="PBD_6570_C1_S13" channel="7" />
+		<Connection pin="AVDD" siteNumber="2" instrument="PBD_6570_C2_S6" channel="7" />
+		<Connection pin="AVDD" siteNumber="3" instrument="PBD_6570_C2_S4" channel="7" />
+		<Connection pin="BBIN" siteNumber="0" instrument="PBD_6570_C2_S8" channel="0" />
+		<Connection pin="BBIN" siteNumber="1" instrument="PBD_6570_C1_S13" channel="4" />
+		<Connection pin="BBIN" siteNumber="2" instrument="PBD_6570_C2_S6" channel="12" />
+		<Connection pin="BBIN" siteNumber="3" instrument="PBD_6570_C2_S4" channel="4" />
+		<Connection pin="BBIP" siteNumber="0" instrument="PBD_6570_C2_S8" channel="8" />
+		<Connection pin="BBIP" siteNumber="1" instrument="PBD_6570_C1_S13" channel="3" />
+		<Connection pin="BBIP" siteNumber="2" instrument="PBD_6570_C2_S6" channel="3" />
+		<Connection pin="BBIP" siteNumber="3" instrument="PBD_6570_C2_S4" channel="3" />
+		<Connection pin="BBQN" siteNumber="0" instrument="PBD_6570_C2_S8" channel="6" />
+		<Connection pin="BBQN" siteNumber="1" instrument="PBD_6570_C1_S13" channel="10" />
+		<Connection pin="BBQN" siteNumber="2" instrument="PBD_6570_C2_S6" channel="10" />
+		<Connection pin="BBQN" siteNumber="3" instrument="PBD_6570_C2_S4" channel="10" />
+		<Connection pin="BBQP" siteNumber="0" instrument="PBD_6570_C2_S8" channel="5" />
+		<Connection pin="BBQP" siteNumber="1" instrument="PBD_6570_C1_S13" channel="1" />
+		<Connection pin="BBQP" siteNumber="2" instrument="PBD_6570_C2_S6" channel="1" />
+		<Connection pin="BBQP" siteNumber="3" instrument="PBD_6570_C2_S4" channel="1" />
+		<Connection pin="DVDD" siteNumber="0" instrument="PBD_6570_C2_S8" channel="7" />
+		<Connection pin="DVDD" siteNumber="1" instrument="PBD_6570_C1_S13" channel="2" />
+		<Connection pin="DVDD" siteNumber="2" instrument="PBD_6570_C2_S6" channel="2" />
+		<Connection pin="DVDD" siteNumber="3" instrument="PBD_6570_C2_S4" channel="2" />
+		<Connection pin="IP" siteNumber="0" instrument="Digitizer_5105_C2_S12" channel="6" />
+		<Connection pin="IN" siteNumber="0" instrument="Digitizer_5105_C2_S12" channel="7" />
+		<Connection pin="IN" siteNumber="1" instrument="Digitizer_5105_C2_S12" channel="3" />
+		<Connection pin="IN" siteNumber="2" instrument="Digitizer_5105_C2_S17" channel="4" />
+		<Connection pin="IN" siteNumber="3" instrument="Digitizer_5105_C2_S17" channel="0" />
+		<Connection pin="IP" siteNumber="1" instrument="Digitizer_5105_C2_S12" channel="2" />
+		<Connection pin="IP" siteNumber="2" instrument="Digitizer_5105_C2_S17" channel="7" />
+		<Connection pin="IP" siteNumber="3" instrument="Digitizer_5105_C2_S17" channel="1" />
+		<Connection pin="K1" siteNumber="0" instrument="RELAY_2567_C1_S15" channel="CH44" />
+		<Connection pin="K1" siteNumber="1" instrument="RELAY_2567_C1_S15" channel="CH8" />
+		<Connection pin="K1" siteNumber="2" instrument="RELAY_2567_C1_S15" channel="CH31" />
+		<Connection pin="K1" siteNumber="3" instrument="RELAY_2567_C1_S15" channel="CH57" />
+		<Connection pin="K2" siteNumber="0" instrument="RELAY_2567_C1_S15" channel="CH45" />
+		<Connection pin="K2" siteNumber="1" instrument="RELAY_2567_C1_S15" channel="CH12" />
+		<Connection pin="K2" siteNumber="2" instrument="RELAY_2567_C1_S15" channel="CH27" />
+		<Connection pin="K2" siteNumber="3" instrument="RELAY_2567_C1_S15" channel="CH62" />
+		<Connection pin="K3" siteNumber="0" instrument="RELAY_2567_C1_S15" channel="CH46" />
+		<Connection pin="K3" siteNumber="1" instrument="RELAY_2567_C1_S15" channel="CH40" />
+		<Connection pin="K3" siteNumber="2" instrument="RELAY_2567_C1_S15" channel="CH25" />
+		<Connection pin="K3" siteNumber="3" instrument="RELAY_2567_C1_S15" channel="CH63" />
+		<Connection pin="K4" siteNumber="0" instrument="RELAY_2567_C1_S15" channel="CH41" />
+		<Connection pin="K4" siteNumber="1" instrument="RELAY_2567_C1_S15" channel="CH13" />
+		<Connection pin="K4" siteNumber="2" instrument="RELAY_2567_C1_S15" channel="CH26" />
+		<Connection pin="K4" siteNumber="3" instrument="RELAY_2567_C1_S15" channel="CH58" />
+		<Connection pin="LOOPOUT" siteNumber="0" instrument="VST_5646R_C1_S4" channel="port5" />
+		<Connection pin="LOOPOUT" siteNumber="1" instrument="VST_5646R_C1_S4" channel="port6" />
+		<Connection pin="LOOPOUT" siteNumber="2" instrument="VST_5646R_C1_S4" channel="port7" />
+		<Connection pin="LOOPOUT" siteNumber="3" instrument="VST_5646R_C1_S4" channel="port8" />
+		<Connection pin="QN" siteNumber="0" instrument="Digitizer_5105_C2_S12" channel="4" />
+		<Connection pin="QP" siteNumber="0" instrument="Digitizer_5105_C2_S12" channel="5" />
+		<Connection pin="SCLK" siteNumber="0" instrument="PBD_6570_C2_S8" channel="4" />
+		<Connection pin="SDA" siteNumber="0" instrument="PBD_6570_C2_S8" channel="12" />
+		<Connection pin="VBAT" siteNumber="0" instrument="SMU_4145_C1_S16" channel="3" />
+		<Connection pin="Xout_en" siteNumber="0" instrument="PBD_6570_C2_S8" channel="1" />
+		<Connection pin="RFIN" siteNumber="0" instrument="VST_5646R_C1_S4" channel="port1" />
+		<Connection pin="QN" siteNumber="1" instrument="Digitizer_5105_C2_S12" channel="1" />
+		<Connection pin="QN" siteNumber="2" instrument="Digitizer_5105_C2_S17" channel="6" />
+		<Connection pin="QN" siteNumber="3" instrument="Digitizer_5105_C2_S17" channel="2" />
+		<Connection pin="QP" siteNumber="1" instrument="Digitizer_5105_C2_S12" channel="0" />
+		<Connection pin="QP" siteNumber="2" instrument="Digitizer_5105_C2_S17" channel="5" />
+		<Connection pin="QP" siteNumber="3" instrument="Digitizer_5105_C2_S17" channel="3" />
+		<Connection pin="RFIN" siteNumber="1" instrument="VST_5646R_C1_S4" channel="port2" />
+		<Connection pin="RFIN" siteNumber="2" instrument="VST_5646R_C1_S4" channel="port3" />
+		<Connection pin="RFIN" siteNumber="3" instrument="VST_5646R_C1_S4" channel="port4" />
+		<Connection pin="SCLK" siteNumber="2" instrument="PBD_6570_C2_S6" channel="8" />
+		<Connection pin="SCLK" siteNumber="1" instrument="PBD_6570_C1_S13" channel="8" />
+		<Connection pin="SCLK" siteNumber="3" instrument="PBD_6570_C2_S4" channel="8" />
+		<Connection pin="SDA" siteNumber="1" instrument="PBD_6570_C1_S13" channel="0" />
+		<Connection pin="SDA" siteNumber="2" instrument="PBD_6570_C2_S6" channel="0" />
+		<Connection pin="SDA" siteNumber="3" instrument="PBD_6570_C2_S4" channel="0" />
+		<Connection pin="VBAT" siteNumber="1" instrument="SMU_4145_C1_S16" channel="2" />
+		<Connection pin="VBAT" siteNumber="2" instrument="SMU_4145_C1_S16" channel="0" />
+		<Connection pin="VBAT" siteNumber="3" instrument="SMU_4145_C1_S16" channel="1" />
+		<Connection pin="XOUT" siteNumber="1" instrument="PBD_6570_C1_S13" channel="5" />
+		<Connection pin="XOUT" siteNumber="0" instrument="PBD_6570_C2_S8" channel="2" />
+		<Connection pin="XOUT" siteNumber="2" instrument="PBD_6570_C2_S6" channel="5" />
+		<Connection pin="XOUT" siteNumber="3" instrument="PBD_6570_C2_S4" channel="5" />
+		<Connection pin="Xout_en" siteNumber="1" instrument="PBD_6570_C1_S13" channel="12" />
+		<Connection pin="Xout_en" siteNumber="2" instrument="PBD_6570_C2_S6" channel="4" />
+		<Connection pin="Xout_en" siteNumber="3" instrument="PBD_6570_C2_S4" channel="12" />
+		<SystemConnection pin="Pullup_3v3" instrument="RELAY_2567_C1_S15" channel="CH59" />
+		<SystemConnection pin="Relay_6V" instrument="SMU_4110_C2_S2" channel="0" />
+	</Connections>
+</PinMap>
